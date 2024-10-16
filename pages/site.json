@@ -68,6 +68,12 @@
             }
           },
           {
+            "label": "Form Demo Page",
+            "url": "/form/demo",
+            "icon": "fa fa-plus",
+            "schemaApi": "get:/pages/form-demo.json"
+          },
+          {
             "label": "列表示例",
             "url": "/crud",
             "rewrite": "/crud/list",

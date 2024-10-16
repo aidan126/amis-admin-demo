@@ -1,0 +1,762 @@
+{
+  "type": "page",
+  "title": "新增",
+  "remark": null,
+  "body": [
+    {
+      "type": "form",
+      "name": "demo-form",
+      "title": "",
+      "mode": "horizontal",
+      "api": "${API_HOST}/api/amis-mock/sample",
+      "labelWidth": 120,
+      "id": "u:43e51ed415b7",
+      "body": [
+        {
+          "type": "group",
+          "body": [
+            {
+              "type": "input-text",
+              "label": "Application Form",
+              "disabled": true,
+              "name": "ApplicationForm",
+              "id": "u:f95364fa9504",
+              "columnRatio": ""
+            },
+            {
+              "type": "button",
+              "label": "Download",
+              "name": "DownloadForm",
+              "id": "u:b003a799e21a"
+            }
+          ],
+          "id": "u:a6eea5b1b41e"
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-date",
+                  "name": "submission_date",
+                  "label": "Submission Date",
+                  "columnClassName": "col-sm-8",
+                  "size": "full",
+                  "id": "u:165e028e8e82",
+                  "embed": false,
+                  "className": "",
+                  "inputClassName": "",
+                  "mode": "horizontal",
+                  "labelAlign": "left",
+                  "required": true
+                }
+              ],
+              "id": "u:8a7bfacb63c8"
+            },
+            {
+              "body": [],
+              "id": "u:8185e042d781"
+            }
+          ],
+          "id": "u:edf7faf28eb1"
+        },
+        {
+          "type": "divider",
+          "id": "u:8300775279bb",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "radios",
+          "label": "Applicant Role",
+          "name": "appl_role",
+          "options": [
+            {
+              "label": "Owner",
+              "value": "Owner"
+            },
+            {
+              "label": "Representative Person",
+              "value": "Representative Person"
+            },
+            {
+              "label": "Management Company",
+              "value": "Management Company"
+            },
+            {
+              "label": "Agent",
+              "value": "Agent"
+            },
+            {
+              "label": "Solicitor",
+              "value": "Solicitor"
+            },
+            {
+              "label": "Others",
+              "value": "Others"
+            }
+          ],
+          "id": "u:897a6a0b9153",
+          "mode": "horizontal",
+          "inline": false,
+          "labelClassName": "content-center",
+          "autoFill": {},
+          "className": "",
+          "itemClassName": "m-b-xs",
+          "columnsCount": 1,
+          "labelAlign": "left",
+          "inputClassName": "m-none",
+          "required": true
+        },
+        {
+          "type": "divider",
+          "id": "u:c78d30ff323e",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "radios",
+          "label": "Payment Method",
+          "name": "appl_role",
+          "options": [
+            {
+              "label": "Online payment Applicant name and applicant address would be printed in demand note as billing company and billing address.",
+              "value": "Online payment Applicant name and applicant address would be printed in demand note as billing company and billing address."
+            },
+            {
+              "label": "Representative Person",
+              "value": "Representative Person"
+            }
+          ],
+          "id": "u:650415b2b2ba",
+          "mode": "horizontal",
+          "inline": false,
+          "labelClassName": "content-center",
+          "autoFill": {},
+          "className": "",
+          "itemClassName": "m-b-xs",
+          "columnsCount": 1,
+          "labelAlign": "left",
+          "horizontal": {
+            "leftFixed": "normal"
+          },
+          "inputClassName": "m-none",
+          "required": true,
+          "remark": {
+            "icon": "fa fa-question-circle",
+            "trigger": [
+              "click"
+            ],
+            "className": "Remark--warning",
+            "placement": "right",
+            "content": "<p><u>Online Payment Methods:</u></br>\n1. PPS</br>\n2. VISA, MasterCard and JCB</br>\n3. UnionPay</p>\n<p><u>Non-online Payment Methods:</u></br>\n1. Payment by post</br>\n2. Payment in person</br>\n3. Payment by telegraphic transfer (applicable to payment from overseas only)</br>\n4. By Bank Automated Teller Machine (ATM)</br>\n5. Through the Internet</br>\n6. By Phone Banking</br></p>",
+            "rootClose": true
+          }
+        },
+        {
+          "type": "divider",
+          "id": "u:caa24b5dabc8",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "radios",
+          "label": "1. Please tick the suitable reason of the application from the following:",
+          "name": "appl_role",
+          "options": [
+            {
+              "label": "normal application/ annual renewal",
+              "value": "normal application/ annual renewal"
+            },
+            {
+              "label": "new registration to Hong Kong",
+              "value": "new registration to Hong Kong"
+            },
+            {
+              "label": "transfer of ownership",
+              "value": "transfer of ownership"
+            },
+            {
+              "label": "change of ship name/ particulars",
+              "value": "change of ship name/ particulars"
+            },
+            {
+              "label": "others",
+              "value": "others"
+            }
+          ],
+          "id": "u:419d977e1dd7",
+          "mode": "horizontal",
+          "inline": false,
+          "labelClassName": "content-center",
+          "autoFill": {},
+          "className": "",
+          "itemClassName": "m-b-xs",
+          "columnsCount": 1,
+          "labelAlign": "left",
+          "horizontal": {
+            "left": 5,
+            "right": 7
+          },
+          "inputClassName": "m-none",
+          "required": true
+        },
+        {
+          "type": "divider",
+          "id": "u:fbdfdbf9bbdf",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "input-text",
+          "label": "2. Name of applicant (Company Name)",
+          "name": "appl_name",
+          "id": "u:316f2ac3fd5c",
+          "size": "lg",
+          "labelAlign": "inherit",
+          "labelWidth": "300px",
+          "required": true,
+          "remark": {
+            "icon": "fa fa-question-circle",
+            "trigger": [
+              "click"
+            ],
+            "className": "Remark--warning",
+            "placement": "right",
+            "content": "The applicant may be the owner of the ship, the owner’s manager(s) or any other person on behalf of the owner. It should be noted that, however, by the terms of Article 7 of the International Convention on Civil Liability for Bunker Oil Pollution Damage, 2001 (“Convention”) and of Sections 13 and 16 of the Bunker Oil Pollution (Liability and Compensation) Ordinance (“Ordinance”), owners are legally responsible for ensuring that their ships are properly certificated.",
+            "rootClose": true
+          }
+        },
+        {
+          "type": "divider",
+          "id": "u:8a9a5a55547f",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "Telephone:",
+                  "name": "phone",
+                  "id": "u:4eecb590c8b1",
+                  "required": true
+                }
+              ],
+              "id": "u:b1883dac3566"
+            },
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "E-mail:",
+                  "name": "email",
+                  "id": "u:49682b23a75c",
+                  "required": true
+                }
+              ],
+              "id": "u:71e1a07563f9"
+            }
+          ],
+          "id": "u:2dfbe2ab1700"
+        },
+        {
+          "type": "divider",
+          "id": "u:9447806cdc73",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "3. Address of registered office",
+                  "name": "appl_addr_1",
+                  "id": "u:84c827325e25",
+                  "required": true
+                }
+              ],
+              "id": "u:edc15e90380a"
+            },
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "appl_addr_2",
+                  "name": "appl_addr_2",
+                  "id": "u:f71efcfd9011"
+                }
+              ],
+              "id": "u:67425db4b748"
+            }
+          ],
+          "id": "u:fda75d9881ed"
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "appl_addr_3",
+                  "name": "appl_addr_3",
+                  "id": "u:26af683ba9de"
+                }
+              ],
+              "id": "u:5d514d02ee1a"
+            },
+            {
+              "body": [],
+              "id": "u:f68e9e558066"
+            }
+          ],
+          "id": "u:7e784309ae36"
+        },
+        {
+          "type": "divider",
+          "id": "u:77b7af4f5aed",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "input-text",
+          "label": false,
+          "name": "text",
+          "id": "u:5756703e09ab",
+          "static": true,
+          "value": "4. I hereby apply for certificate(s) to be issued in respect of the ship(s) listed below and agree the fee of $535 per certificate.",
+          "readOnly": true,
+          "remark": {
+            "icon": "fa fa-question-circle",
+            "trigger": [
+              "hover",
+              "click"
+            ],
+            "className": "Remark--warning",
+            "placement": "right",
+            "content": "A fee of HK$535 per certificate is payable (Section 2 of the Bunker Oil Pollution (Liability and Compensation) (Application Fee for Insurance Certificate) Regulation (Cap. 605A)). See also Part A, paragraph 5(b) of the ‘Notes for Guidance’.",
+            "rootClose": true
+          },
+          "size": "full"
+        },
+        {
+          "type": "divider",
+          "id": "u:1c669a8c71ff",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "Name in Block Letters:",
+                  "name": "name",
+                  "id": "u:387e50e4bd80"
+                }
+              ],
+              "id": "u:786b06f17999"
+            },
+            {
+              "body": [
+                {
+                  "type": "input-text",
+                  "label": "Position in Company:",
+                  "name": "appl_pos",
+                  "id": "u:d60fa1021bec"
+                }
+              ],
+              "id": "u:a2b03b251e70"
+            }
+          ],
+          "id": "u:e13cc55c6339"
+        },
+        {
+          "type": "grid",
+          "columns": [
+            {
+              "body": [
+                {
+                  "type": "input-date",
+                  "label": "Sign Date:",
+                  "name": "sign_date",
+                  "id": "u:d31e3b5f8aca"
+                }
+              ],
+              "id": "u:23a77690f6e3"
+            },
+            {
+              "body": [],
+              "id": "u:83746b01891a"
+            }
+          ],
+          "id": "u:2569fd96b5e6"
+        },
+        {
+          "type": "divider",
+          "id": "u:74ae058f3b41",
+          "lineStyle": "solid",
+          "direction": "horizontal",
+          "rotate": 0
+        },
+        {
+          "type": "tpl",
+          "tpl": "SCHEDULE OF SHIP(S) AND OF FINANCIAL SECURITY TO BE CERTIFIED",
+          "inline": false,
+          "wrapperComponent": "",
+          "id": "u:873aa33cca07"
+        },
+        {
+          "type": "tpl",
+          "tpl": "<ul><li>Single application: input data for up to 10 vessels in alphabetical order of their names.</li><li>Package application: input data for your vessel.</li></ul>",
+          "inline": true,
+          "wrapperComponent": "",
+          "id": "u:19394e398c41"
+        },
+        {
+          "type": "divider",
+          "id": "u:9a4a62f1b4d1"
+        },
+        {
+          "id": "u:27d755f935ba",
+          "type": "crud2",
+          "mode": "table2",
+          "dsType": "api",
+          "syncLocation": true,
+          "primaryField": "rowId",
+          "loadType": "pagination",
+          "headerToolbar": [
+            {
+              "type": "flex",
+              "direction": "row",
+              "justify": "flex-start",
+              "alignItems": "stretch",
+              "style": {
+                "position": "static"
+              },
+              "items": [
+                {
+                  "type": "container",
+                  "align": "left",
+                  "behavior": [
+                    "Insert",
+                    "BulkEdit",
+                    "BulkDelete"
+                  ],
+                  "body": [],
+                  "wrapperBody": false,
+                  "style": {
+                    "flexGrow": 1,
+                    "flex": "1 1 auto",
+                    "position": "static",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "nowrap",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-start"
+                  },
+                  "id": "u:61c14ee94226",
+                  "isFixedHeight": false
+                },
+                {
+                  "type": "container",
+                  "align": "right",
+                  "behavior": [
+                    "FuzzyQuery"
+                  ],
+                  "body": [],
+                  "wrapperBody": false,
+                  "style": {
+                    "flexGrow": 1,
+                    "flex": "1 1 auto",
+                    "position": "static",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "nowrap",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-end"
+                  },
+                  "id": "u:5ef51e4b47c1",
+                  "isFixedHeight": false
+                }
+              ],
+              "id": "u:6af691aa6819"
+            }
+          ],
+          "footerToolbar": [
+            {
+              "type": "flex",
+              "direction": "row",
+              "justify": "flex-start",
+              "alignItems": "stretch",
+              "style": {
+                "position": "static"
+              },
+              "items": [
+                {
+                  "type": "container",
+                  "align": "left",
+                  "body": [
+                    {
+                      "type": "button",
+                      "label": "Download All Ship Attachments",
+                      "onEvent": {
+                        "click": {
+                          "actions": []
+                        }
+                      },
+                      "id": "u:a9a4dd205984"
+                    }
+                  ],
+                  "wrapperBody": false,
+                  "style": {
+                    "flexGrow": 1,
+                    "flex": "1 1 auto",
+                    "position": "static",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "nowrap",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-start"
+                  },
+                  "id": "u:bd0783d122a2",
+                  "isFixedHeight": false
+                },
+                {
+                  "type": "container",
+                  "align": "right",
+                  "body": [
+                    {
+                      "type": "pagination",
+                      "behavior": "Pagination",
+                      "layout": [
+                        "total",
+                        "perPage",
+                        "pager"
+                      ],
+                      "perPage": 10,
+                      "perPageAvailable": [
+                        10,
+                        20,
+                        50,
+                        100
+                      ],
+                      "align": "right",
+                      "id": "u:6224616ff952",
+                      "size": ""
+                    }
+                  ],
+                  "wrapperBody": false,
+                  "style": {
+                    "flexGrow": 1,
+                    "flex": "1 1 auto",
+                    "position": "static",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "nowrap",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-end"
+                  },
+                  "id": "u:72399a61b338",
+                  "isFixedHeight": false
+                }
+              ],
+              "id": "u:0ac9aa2d6801"
+            }
+          ],
+          "columns": [
+            {
+              "type": "tpl",
+              "title": "Ship Name",
+              "name": "ship_name",
+              "id": "u:ff6d22facf86",
+              "placeholder": "-",
+              "copyable": false,
+              "sorter": false
+            },
+            {
+              "type": "tpl",
+              "title": "Type of Ship",
+              "name": "ship_type",
+              "id": "u:0b283b5b69f7",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Official Number",
+              "name": "official_no",
+              "id": "u:a71d69c8c659",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "IMO Number",
+              "name": "imo_no",
+              "id": "u:6654e4f464aa",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Flag and Port of Registry",
+              "name": "registry_flag_port",
+              "id": "u:af0f27611391",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Convention Gross Tonnage",
+              "name": "gross_tonnage",
+              "id": "u:26b3f9e44054",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Financial Security Type",
+              "name": "fin_sec_type",
+              "id": "u:d56b4c8cdbf7",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Period of Validity From",
+              "name": "fin_sec_validfrom",
+              "id": "u:562bf66d3bfc",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Period of Validity Until",
+              "name": "fin_sec_validfrom",
+              "id": "u:deba7ea4a23e",
+              "placeholder": "-"
+            },
+            {
+              "type": "tpl",
+              "title": "Name(s) of Insurer(s) and/or Guarantor(s)",
+              "name": "insurer_name",
+              "id": "u:f0ce0b545d82"
+            },
+            {
+              "type": "tpl",
+              "title": "Address(es) of Insurer(s) and/or Guarantor(s)",
+              "name": "insurer_addr_1",
+              "id": "u:8deca7050568"
+            },
+            {
+              "type": "tpl",
+              "title": "Name(s) of Owner of ships",
+              "name": "owner_name",
+              "id": "u:0cf38e7eb461"
+            },
+            {
+              "type": "tpl",
+              "title": "Address(es) of Owner of ships",
+              "name": "owner_addr_1",
+              "id": "u:0624e68cbf76"
+            },
+            {
+              "type": "tpl",
+              "title": "Blue Card Certificate",
+              "name": "BCC_BLUE_CARD",
+              "id": "u:de7e226dcb8c"
+            },
+            {
+              "type": "tpl",
+              "title": "Approval-in-Principle (AIP)",
+              "name": "aip_file",
+              "id": "u:b8163c9b6c74"
+            },
+            {
+              "type": "tpl",
+              "title": "Business Registration (BR)",
+              "name": "brcert",
+              "id": "u:7c8852a7d248"
+            },
+            {
+              "type": "tpl",
+              "title": "Others",
+              "name": "bcc_oth_doc_file",
+              "id": "u:b24876bb7bdb"
+            }
+          ],
+          "editorSetting": {
+            "mock": {
+              "enable": true,
+              "maxDisplayRows": 5
+            }
+          },
+          "selectable": false,
+          "hidden": false
+        },
+        {
+          "type": "tpl",
+          "tpl": "Personal Data Collection Statement",
+          "inline": true,
+          "wrapperComponent": "h1",
+          "id": "u:f8a6f3e41396",
+          "themeCss": {
+            "baseControlClassName": {
+              "font:default": {
+                "fontSize": "var(--fonts-size-5)"
+              }
+            }
+          }
+        },
+        {
+          "type": "tpl",
+          "tpl": "<p><b>1. Purposes of Collection</b></br>\nThe personal data provided by means of this form will be used by Marine Department for the following purposes:</br>\n(a) activities relating to the processing of your application in this form;</br>\n(b) facilitating communication between Marine Department and yourself;</br>\n(c) in accordance with the Bunker Oil Pollution (Liability and Compensation) Ordinance (Cap.605), a copy of issued certificate would be made available for public inspection;</br>\n(d) assisting in the enforcement of any other Ordinances and Regulations by other Government Bureaux and Departments;</br>\n(e) limited personal data of successful applicants may be used via the Marine Department’s Internet web site for verification of the issued certificate by any third party; and</br>\n(f) for statistics and research purposes on the condition that the resulting statistics or results will not be made available in a form which will identify the data subjects.</p>\n<p><b>2. Classes of Transferees</b></br>\nThe personal data you provided by means of this form may be disclosed to other Government Bureaux and Departments for the purposes mentioned in paragraph 1 above.</p>\n<p><b>3. Access to Personal Data</b></br>\nYou have a right of access and correction with respect to personal data as provided for in Sections 18 and 22 and Principle 6 of Schedule 1 of the Personal Data (Privacy) Ordinance. Your right of access includes the right to obtain a copy of your personal data provided by this form.</p>\n<p><b>4. Enquires</b></br>\nEnquiries concerning the personal data collected by means of this form, including the making of access and correction, should be addressed to:</br>\n</br>\nOfficer-in-charge</br>\nCargo Ships Safety Section</br>\nMarine Department</br>\n24/F, Harbour Building</br>\n38 Pier Road, Central</br>\nHong Kong.\n</p>",
+          "inline": true,
+          "wrapperComponent": "",
+          "id": "u:4a7b72fcd4aa"
+        },
+        {
+          "type": "checkbox",
+          "option": "",
+          "name": "bcc_privacy",
+          "id": "u:971b1c8ffba3",
+          "label": "<b>I acknowledge that I have read, understood and agree to the above statements.</b>",
+          "value": false,
+          "className": "flex-row-reverse",
+          "labelClassName": "",
+          "labelAlign": "left",
+          "mode": "horizontal",
+          "horizontal": {
+            "left": 11,
+            "right": 1
+          },
+          "required": true,
+          "inputClassName": "text-right"
+        }
+      ],
+      "actions": [
+        {
+          "type": "submit",
+          "label": "提交",
+          "primary": true,
+          "id": "u:2efdd1ec3bc4"
+        }
+      ],
+      "feat": "Insert",
+      "dsType": "api",
+      "labelAlign": "left"
+    }
+  ]
+}
